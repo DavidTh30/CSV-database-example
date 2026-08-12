@@ -2,121 +2,103 @@
 <CONFIG>
   <ProjectOptions>
     <Version Value="12"/>
+    <PathDelim Value="\"/>
     <General>
-      <Flags>
-        <CompatibilityMode Value="True"/>
-      </Flags>
-      <Title Value="testgridctr"/>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="SaveAdnOpenCsvFile"/>
+      <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
     </General>
-    <i18n>
-      <EnableI18N LFM="False"/>
-    </i18n>
-    <BuildModes Count="1" Active="Default">
-      <Item1 Name="Default" Default="True"/>
+    <BuildModes>
+      <Item Name="Default" Default="True"/>
+      <Item Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="SaveAdnOpenCsvFile"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+              <RunWithoutDebug Value="True"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <DestinationDirectory Value="$(TestDir)/testgridctr/"/>
+      <UseFileFilters Value="True"/>
     </PublishOptions>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="1">
-        <Mode0 Name="default"/>
-      </Modes>
     </RunParams>
-    <RequiredPackages Count="3">
-      <Item1>
-        <PackageName Value="jujiboutils"/>
-      </Item1>
-      <Item2>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="dbcontrols"/>
+      </Item>
+      <Item>
         <PackageName Value="FCL"/>
-      </Item2>
-      <Item3>
+      </Item>
+      <Item>
+        <PackageName Value="jujiboutils"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
-      </Item3>
+      </Item>
     </RequiredPackages>
-    <Units Count="2">
-      <Unit0>
+    <Units>
+      <Unit>
         <Filename Value="testgridctr.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <UsageCount Value="193"/>
-      </Unit0>
-      <Unit1>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
+      </Unit>
+      <Unit>
+        <Filename Value="main.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="Form1"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="132"/>
-        <CursorPos X="47" Y="203"/>
-        <UsageCount Value="193"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
-      </Unit1>
+      </Unit>
+      <Unit>
+        <Filename Value="Note.txt"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
-    <JumpHistory Count="11" HistoryIndex="10">
-      <Position1>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="31" TopLine="12"/>
-      </Position1>
-      <Position2>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="61" Column="21" TopLine="36"/>
-      </Position2>
-      <Position3>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="73" Column="75" TopLine="45"/>
-      </Position3>
-      <Position4>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="65" Column="25" TopLine="48"/>
-      </Position4>
-      <Position5>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="64" Column="42" TopLine="52"/>
-      </Position5>
-      <Position6>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="97" Column="32" TopLine="59"/>
-      </Position6>
-      <Position7>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="98" Column="32" TopLine="60"/>
-      </Position7>
-      <Position8>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="9" Column="74"/>
-      </Position8>
-      <Position9>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="116" Column="31" TopLine="75"/>
-      </Position9>
-      <Position10>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="108" Column="88" TopLine="81"/>
-      </Position10>
-      <Position11>
-        <Filename Value="../../../AppData/Local/lazarus/onlinepackagemanager/packages/jujiboutils/examples/testgridctr/main.pas"/>
-        <Caret Line="10" Column="16"/>
-      </Position11>
-    </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
+    <PathDelim Value="\"/>
     <Target>
-      <Filename Value="testgridctr"/>
+      <Filename Value="SaveAdnOpenCsvFile"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
       <Debugging>
-        <DebugInfoType Value="dsDwarf2Set"/>
+        <DebugInfoType Value="dsDwarf3"/>
       </Debugging>
       <Options>
         <Win32>
@@ -125,4 +107,17 @@
       </Options>
     </Linking>
   </CompilerOptions>
+  <Debugging>
+    <Exceptions>
+      <Item>
+        <Name Value="EAbort"/>
+      </Item>
+      <Item>
+        <Name Value="ECodetoolError"/>
+      </Item>
+      <Item>
+        <Name Value="EFOpenError"/>
+      </Item>
+    </Exceptions>
+  </Debugging>
 </CONFIG>

@@ -3,9 +3,12 @@ program testgridctr;
 {$mode objfpc}{$H+}
 
 uses
-  {$IFDEF UNIX}{$IFDEF UseCThreads}
+  {$IFDEF UNIX}
   cthreads,
-  {$ENDIF}clocale,{$ENDIF}
+  {$ENDIF}
+  {$IFDEF HASAMIGA}
+  athreads,
+  {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, main
   { you can add units after this };
@@ -14,6 +17,8 @@ uses
 
 begin
   RequireDerivedFormResource := True;
+  Application.Scaled:=True;
+  Application.Title:='SaveAdnOpenCsvFile';
   Application.Initialize;
   Application.CreateForm(TForm1, Form1);
   Application.Run;
