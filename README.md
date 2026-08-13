@@ -7,5 +7,7 @@ KeyWord:
   - CSV to BufDataset
   - Save to CSV
   - Open CSV
+  - Open Dialog
+  - Save Dialog
 
 <img src="SS01.png" width="400" height="400">
