@@ -5,7 +5,7 @@
     <PathDelim Value="\"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
-      <Title Value="SaveAdnOpenCsvFile"/>
+      <Title Value="SaveAndOpenCsvFile"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
@@ -20,7 +20,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="SaveAdnOpenCsvFile"/>
+            <Filename Value="SaveAndOpenCsvFile"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -56,9 +56,6 @@
     </RunParams>
     <RequiredPackages>
       <Item>
-        <PackageName Value="dbcontrols"/>
-      </Item>
-      <Item>
         <PackageName Value="FCL"/>
       </Item>
       <Item>
@@ -90,7 +87,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="SaveAdnOpenCsvFile"/>
+      <Filename Value="SaveAndOpenCsvFile"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

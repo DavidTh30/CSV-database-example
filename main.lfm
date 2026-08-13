@@ -1,15 +1,15 @@
 object Form1: TForm1
-  Left = 453
+  Left = 355
   Height = 327
-  Top = 239
+  Top = 139
   Width = 419
-  Caption = 'SaveAdnOpenCsvFile'
+  Caption = 'SaveAndOpenCsvFile'
   ClientHeight = 327
   ClientWidth = 419
   Menu = MainMenu1
-  OnCreate = FormCreate
   Position = poWorkAreaCenter
-  LCLVersion = '3.4.0.0'
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
   object DBNavigator1: TDBNavigator
     Left = 0
     Height = 25
